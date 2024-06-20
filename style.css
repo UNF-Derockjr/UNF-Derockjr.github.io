@@ -1,0 +1,75 @@
+body{
+    background-image:url("WindowsWallpaper.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.application {
+    margin: 20px;
+    width: 70px;
+    height: 100px;
+}
+.application:hover{
+    border: 1px solid gray;
+}
+.application *{
+    width: 100%;
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    color: black;
+    filter: invert() drop-shadow(0px 0px 20px rgb(0, 9, 112)) ;
+}
+#taskbar{
+    position: fixed;
+    bottom: 0%;
+    background-color: #091E3B;
+    width: 100vw;
+    height: 50px;
+}
+#start{
+    width: 50px;
+    height: 50px;
+}
+#start > img{
+    padding: 8px;
+    max-width: 70%;
+    filter: invert();
+}
+#start:hover{
+    filter: drop-shadow(0px 0px 10px white);
+}
+.window{
+    position: absolute;
+    margin: 0;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(207, 207, 207);
+}
+.window *{
+    margin: 0;
+}
+#title-bar{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(165, 165, 165);
+    top: 0%;
+    display: flex;
+}
+#title-bar > p{
+    margin: 0;
+}
+#title-bar > h3{
+    right: 0%;
+    position: absolute;
+    text-align: center;
+}
+#title-bar > h3:nth-child(2){
+    margin-right: 50px;
+}
+#title-bar > h3:nth-child(3){
+    margin-right: 30px;
+}
+#title-bar > h3:nth-child(4){
+    margin-right: 10px;
+}
