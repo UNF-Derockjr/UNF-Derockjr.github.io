@@ -1,5 +1,7 @@
-let app = `<div class='window'><div id='title-bar'></div></div>`
+var md = new MobileDetect(window.navigator.userAgent);
 
+let app = `<div class='window'><div id='title-bar'></div></div>`
+alert(md.phone());
 function OpenApp(name) {
     let newWindow = $(CreateWindow(name));
     switch (name) {
@@ -50,14 +52,14 @@ function CreateWindow(name){
         default:
             break;
     }
-    htmlCode += "<h3>-</h3><h3>[]</h3><h3>X</h3>"
+    htmlCode += "<h3>-</h3><h3>[]</h3><h3 onclick='$(this).parent().parent().remove();'>X</h3>"
     htmlCode += "</div>";//close title bar
     switch (name) {
         case "AboutMe":
             htmlCode += "<h2>Hello, My name is Derrick</h2>";
             break;
         case "Gallery":
-            htmlCode += "<div "
+            //htmlCode += "<div>"
             htmlCode += "<img src='Gallery/CodePen_InstagramRemake.png'></img>";
             break;
         case "Awards":
