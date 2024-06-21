@@ -1,5 +1,3 @@
-var md = new MobileDetect(window.navigator.userAgent);
-
 let app = `<div class='window'><div id='title-bar'></div></div>`
 function OpenApp(name) {
     let newWindow = $(CreateWindow(name));
@@ -80,5 +78,4 @@ function CreateWindow(name){
 
 document.addEventListener("DOMContentLoaded", function (event) {
     //start();
-    alert(md.phone());
 });
