@@ -1,15 +1,102 @@
-.app{
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
+
+body {
+    background-image: url("IphoneWallpaper.jpg");
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    ;
+}
+
+#icon-screen {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#icon-screen>.app:nth-child(1) span {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(175, 70, 252, 1 0%, )rgba(63, 94, 251, 1) 100%);
+}
+
+#icon-screen .app:nth-child(2) span {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(45deg, rgba(131, 58, 180, 1) 0%, rgba(188, 29, 253, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+#icon-screen .app:nth-child(3) span {
+
+    background: rgb(34, 193, 195);
+    background: linear-gradient(204deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+#icon-screen .app:nth-child(4) span {
+    background: rgb(245, 251, 63);
+    background: radial-gradient(circle, rgba(245, 251, 63, 1) 0%, rgb(252, 70, 70) 100%);
+}
+
+.app {
+    padding: 5px;
     width: 100px;
     height: 100px;
-    border: red solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.app > p{
-    font-size: 20px;
+
+.app>p {
+    height: 1px;
+    font-size: 15px;
     text-align: center;
+    margin: 0;
+    filter: drop-shadow(0px 0px 10px black);
 }
-.app > span{
-    border: black solid 5px;
+
+.app>span {
+    display: flex;
+    border: black none 5px;
+    background-color: green;
     border-radius: 20px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+#bottom-panel {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    /* positions at the bottom */
+    left: 50%;
+    /* centers horizontally */
+    transform: translateX(-50%);
+    width: 50%;
+    /* or any desired width */
+    width: 80%;
+    height: 100px;
+    border: gray solid 5px;
+    background-color: gray;
+    border-radius: 45px;
+    justify-content: center;
+    color: white;
+}
+
+#bottom-panel div:nth-child(1) span {
+    background: rgb(31, 159, 73);
+    background: linear-gradient(333deg, rgba(31, 159, 73, 1) 0%, rgba(36, 191, 75, 1) 50%, rgba(31, 218, 70, 1) 100%);
+}
+
+#bottom-panel div:nth-child(2) span {
+    background: rgb(0, 213, 255);
+    background: linear-gradient(0deg, rgba(0, 213, 255, 1) 0%, rgba(0, 71, 254, 1) 100%);
+}
+#application{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
 }
