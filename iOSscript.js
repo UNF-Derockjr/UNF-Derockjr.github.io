@@ -29,9 +29,9 @@ function openApp(app){
         case "phone":
             htmlCode += `
             <div id='phone-content'>
-                <h3>
+                <h1>
                     +1 904-578-0594
-                </h3>
+                </h1>
             `;
             htmlCode += `
                 <div id="numpad">
@@ -47,6 +47,9 @@ function openApp(app){
                     <h2>*</h2>
                     <h2>0</h2>
                     <h2>#</h2>
+                    <span class="material-symbols-outlined">
+                    call
+                    </span>
                 </div
             </div>
             `;
