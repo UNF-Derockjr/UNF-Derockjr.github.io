@@ -11,7 +11,7 @@ function openApp(app){
         case "AboutMe":
             htmlCode += `
             <div id='app-content'>
-                <h3>
+                <h3 style='padding: 30px;'>
                     Hello, My name is Derrick. Writing code and exploring technology has been a strong passion of mine for about 10 years now. At the same time, my interest in robotics, 3D modelling, video editing, and a lot has grown more over my school years. I am always ready and striving to learn new skills and solve advance problems.
                 </h3>
             </div>

@@ -6,18 +6,20 @@ body {
     height: 100%;
     margin: 0;
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
     font-family: 'IBM Plex Sans';
     font-weight: 500;
 }
-
 #icon-screen {
     display: flex;
     justify-content: center;
+}
+#icon-screen > div {
+    display: flex;
     flex-wrap: wrap;
 }
 
-#icon-screen>.app:nth-child(1) span {
+#icon-screen .app:nth-child(1) span {
     background: rgb(63, 94, 251);
     background: radial-gradient(circle, rgba(175, 70, 252, 1 0%, )rgba(63, 94, 251, 1) 100%);
 }
@@ -78,7 +80,7 @@ body {
     transform: translateX(-50%);
     width: 80%;
     /* or any desired width */
-    width: 360px;
+    width: 90%;
     height: 80px;
     background-color: rgba(210, 210, 210, 0.4);
     border-radius: 30px;
@@ -119,7 +121,7 @@ body {
     align-items: center;
 }
 #numpad{
-    width: 70%;
+    width: 80%;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
