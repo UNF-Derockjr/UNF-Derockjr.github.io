@@ -210,14 +210,15 @@ body {
     background-color: rgba(22, 22, 22);
     color: white;
     font-size: 15px;
-    width: 60%;
+    width: 50%;
+    border: none;
 }
 #mail #message textarea{
     background-color: rgba(22, 22, 22);
     color: white;
     font-size: 20px;
-    width: 100%;
-    height: 50vh;
+    width: 95%;
+    height: 200px;
     resize: none;
     border: none;
     font-weight: 100px;
