@@ -1,5 +1,5 @@
 let htmlCode = "";
-function openApp(app){
+function OpenApp(app){
     htmlCode = "";
     htmlCode += `
     <div id='application'>
@@ -38,9 +38,38 @@ function openApp(app){
                 </div>
             `;
             break;
-        case "ContactMe":
+        case "Mail":
+            htmlCode += `
+            <div id="mail">
+                <div id="header">
+                    <h1>New Message</h1>
+                    <span class="material-symbols-outlined" onclick="SendEmail()">
+                    arrow_upward
+                    </span>
+                </div>
+                <div id="to">
+                    <h3>To: </h3>
+                    <h3>derrickkeithjr@gmail.com</h3>
+                </div>
+                <hr>
+                <div id="from">
+                    <h3>Cc/Bcc, From:</h3>
+                    <input type="text" placeholder="Email here"></input>
+                </div>
+                <hr>
+                <div id="subject">
+                    <h3>Subject:</h3>
+                    <input type="text" placeholder="Subject here"></input>
+                </div>
+                <hr>
+                <div id="message">
+                    <textarea placeholder="Message here"></textarea>
+                    <p>Sent form my iPhone</p>
+                </div>
+            </div>
+            `;
             break;
-        case "phone":
+        case "Phone":
             htmlCode += `
             <div id='phone-content'>
                 <h1>
@@ -75,4 +104,8 @@ function openApp(app){
 
     document.body.innerHTML += "<div id='application-holder'></div>";
     document.getElementById("application-holder").innerHTML = htmlCode;
+}
+
+function SendEmail(){
+    alert("Sorry, this doenst work yet. Please use your own emailing app to contact me.");
 }
