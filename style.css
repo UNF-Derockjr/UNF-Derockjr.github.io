@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 body{
     background-image:url("WindowsWallpaper.jpg");
     background-size: cover;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 .application {
     margin: 20px;
@@ -51,12 +53,12 @@ body{
 }
 #title-bar{
     width: 100%;
-    height: 20px;
+    height: 30px;
     background-color: rgb(165, 165, 165);
     top: 0%;
     display: flex;
 }
-#title-bar > p{
+#title-bar > h2{
     margin: 0;
 }
 #title-bar > h3{
@@ -72,4 +74,10 @@ body{
 }
 #title-bar > h3:nth-child(4){
     margin-right: 10px;
+}
+#content{
+    font-size: 17px;
+}
+.gallery{
+    width: 50%;
 }

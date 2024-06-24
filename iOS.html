@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Portfolio on iOS</title>
+    <link rel="stylesheet" href="iOSstyle.css">
+</head>
+<body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <div id="icon-screen">
+        <div class="app" onclick="openApp('AboutMe')">
+            <!-- <img src="" alt=""> -->
+            <span class="material-symbols-outlined">
+                person
+                </span>
+            <p>About Me</p>
+        </div>
+        <div class="app" onclick="openApp('Gallery')">
+            <!-- <img src="" alt=""> -->
+            <span class="material-symbols-outlined">
+                photo_library
+                </span>
+            <p>Gallery</p>
+        </div>
+        <div class="app" onclick="openApp('Awards')">
+            <!-- <img src="" alt=""> -->
+            <span class="material-symbols-outlined">
+                trophy
+                </span>
+            <p>Awards</p>
+        </div>
+        <div class="app">
+            <!-- <img src="" alt=""> -->
+            <span class="material-symbols-outlined">
+                groups
+                </span>
+            <p>Socials</p>
+        </div>
+        
+    </div>
+    <div id="bottom-panel">
+        <div class="app" onclick="openApp('phone')">
+            <!-- <img src="" alt=""> -->
+            <span class="material-symbols-outlined">
+                call
+                </span>
+        </div>
+        <div class="app">
+            <!-- <img src="" alt=""> -->
+            <span class="material-symbols-outlined">
+                mail
+                </span>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="iOSscript.js"></script>
+</body>
+</html>
