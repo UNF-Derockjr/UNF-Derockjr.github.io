@@ -149,3 +149,10 @@ body {
     border-radius: 40px;
     font-size: 40px;
 }
+#awards img{
+    width: 49%;
+    height: 200px;
+    overflow: hidden;
+    object-fit: contain;
+    
+}

@@ -20,6 +20,14 @@ function openApp(app){
         case "Gallery":
             break;
         case "Awards":
+            htmlCode += `
+            <div id="awards">
+                <img src="Awards/FLLAward.jpg"></img>
+                <img src="Awards/CIW-Internet-Business-Associate.jpg"></img>
+                <img src="Awards/Derrick-Keith-Certificate-of-Completion-_3D-Modeling-with-Maya_-Google-Docs.jpg"></img>
+                <img src="Awards/EsportsAward.jpg"></img>
+            </div>
+            `;
             break;
             
         case "Socials":
