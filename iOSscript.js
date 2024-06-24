@@ -31,6 +31,12 @@ function openApp(app){
             break;
             
         case "Socials":
+            htmlCode += `
+                <div class="social-tag>
+                    //span tag here
+                    <p> @derockjrdev </p>
+                </div>
+            `;
             break;
         case "ContactMe":
             break;
