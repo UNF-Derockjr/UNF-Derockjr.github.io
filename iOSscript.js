@@ -122,12 +122,11 @@ function OpenApp(app){
 }
 
 function SendEmail(){
-    const from = document.getElementById("from-text").textContent;
-    const subject = document.getElementById("subject-text").textContent;
-    const message = document.getElementById("message-text").textContent;
+    const subject = document.getElementById("subject-text").value;
+    const message = document.getElementById("message-text").value;
     console.log(subject);
     console.log(message);
-    //window.open('mailto:derrickkeithjr@gmail.com?subject=sub' + subject + '&body=body' + message);
+    window.open('mailto:derrickkeithjr@gmail.com?subject=' + subject + '&body=' + message);
     //alert("Sorry, this doenst work yet. Please use your own emailing app to contact me.");
 }
 function Call(){
