@@ -135,7 +135,7 @@ function SendEmail(){
 }
 function Call(){
     window.open('tel:9045780594');
-    alert("Sorry, this doenst work yet. Please use your own phone app to contact me.");
+    //alert("Sorry, this doenst work yet. Please use your own phone app to contact me.");
 }
 async function loadImages() {
     try {
