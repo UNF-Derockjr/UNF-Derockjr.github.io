@@ -40,7 +40,7 @@ function OpenApp(app){
                 <img src="Gallery/BlenderBoy.JPG" alt=""></img>
                 <img src="Gallery/BlenderGameDev.png" alt=""></img>
                 <img src="Gallery/UnityGameDev1.png" alt=""></img>
-            </div
+            </div>
             `;
             break;
         case "Awards":
