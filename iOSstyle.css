@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     font-family: 'IBM Plex Sans';
     font-weight: 500;
+    background-color: black;
 }
 #icon-screen {
     display: flex;
@@ -69,7 +70,16 @@ body {
     justify-content: center;
     font-size: 60px;
 }
-
+#back{
+    display: flex;
+    align-items: center;
+    background-color: rgb(87, 87, 87);
+    border-radius: 20px;
+    width: 20%;
+    height: 3%;
+    margin: 10px;
+    padding: 3px;
+}
 #bottom-panel {
     display: flex;
     position: absolute;
@@ -103,8 +113,8 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: white;
-    color: black;
+    background-color: rgb(22, 22, 22);
+    color: white;
 }
 #application:has(#phone-content){
     background-color: rgb(18, 18, 18);
@@ -168,8 +178,6 @@ body {
     align-items: center;
     width: 100%;
 }
-#mail #header h1{
-}
 #mail #header span{
     position: absolute;
     right: 0;
@@ -222,4 +230,13 @@ body {
     resize: none;
     border: none;
     font-weight: 100px;
+}
+.social-tag{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 40px;
+}
+.social-tag i{
+    margin-right: 10px;
 }

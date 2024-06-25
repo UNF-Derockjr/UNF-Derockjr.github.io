@@ -3,9 +3,12 @@ function OpenApp(app){
     htmlCode = "";
     htmlCode += `
     <div id='application'>
-        <span class='material-symbols-outlined' onclick='$(this).parent().parent().remove();'>
-            arrow_back_ios
-        </span>
+        <div id="back" onclick='$(this).parent().parent().remove();'>
+            <span class='material-symbols-outlined'>
+                arrow_back_ios
+            </span>
+            <h3>Back</h3>
+        </div>
     `;
     switch (app) {
         case "AboutMe":
@@ -32,8 +35,20 @@ function OpenApp(app){
             
         case "Socials":
             htmlCode += `
-                <div class="social-tag>
-                    //span tag here
+                <div class="social-tag" onClick="window.location.assign('https://github.com/UNF-Derockjr');">
+                    <i class="fa-brands fa-github" ></i>
+                    <p> @UNF-Derockjr </p>
+                </div>
+                <div class="social-tag" onClick="window.location.assign('https://www.linkedin.com/in/derrick-keith-504a9a17b/');">
+                    <i class="fa-brands fa-linkedin" ></i>
+                    <p> @DerrickKeith </p>
+                </div>
+                <div class="social-tag" onClick="window.location.assign('https://www.instagram.com/derockjrdev/');">
+                    <i class="fa-brands fa-instagram" ></i>
+                    <p> @derockjrdev </p>
+                </div>
+                <div class="social-tag" onClick="window.location.assign('https://www.youtube.com/channel/UC1FxA4iH6VMKdEVPYml4s0A');">
+                    <i class="fa-brands fa-youtube" ></i>
                     <p> @derockjrdev </p>
                 </div>
             `;
@@ -54,16 +69,16 @@ function OpenApp(app){
                 <hr>
                 <div id="from">
                     <h3>Cc/Bcc, From:</h3>
-                    <input type="text" placeholder="Email here"></input>
+                    <input id="from-text" type="text" placeholder="Email here"></input>
                 </div>
                 <hr>
                 <div id="subject">
                     <h3>Subject:</h3>
-                    <input type="text" placeholder="Subject here"></input>
+                    <input id="subject-text" type="text" placeholder="Subject here"></input>
                 </div>
                 <hr>
                 <div id="message">
-                    <textarea placeholder="Message here"></textarea>
+                    <textarea id="message-text" placeholder="Message here"></textarea>
                     <p>Sent form my iPhone</p>
                 </div>
             </div>
@@ -90,7 +105,7 @@ function OpenApp(app){
                     <h2>*</h2>
                     <h2>0</h2>
                     <h2>#</h2>
-                    <span class="material-symbols-outlined">
+                    <span class="material-symbols-outlined" onClick="Call()">
                     call
                     </span>
                 </div
@@ -107,5 +122,14 @@ function OpenApp(app){
 }
 
 function SendEmail(){
-    alert("Sorry, this doenst work yet. Please use your own emailing app to contact me.");
+    const from = document.getElementById("from-text").textContent;
+    const subject = document.getElementById("subject-text").textContent;
+    const message = document.getElementById("message-text").textContent;
+    console.log(subject);
+    console.log(message);
+    //window.open('mailto:derrickkeithjr@gmail.com?subject=sub' + subject + '&body=body' + message);
+    //alert("Sorry, this doenst work yet. Please use your own emailing app to contact me.");
+}
+function Call(){
+    alert("Sorry, this doenst work yet. Please use your own phone app to contact me.");
 }
