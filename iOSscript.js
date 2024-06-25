@@ -23,23 +23,23 @@ function OpenApp(app){
         case "Gallery":
             htmlCode += `
             <div id="gallery">
-                <img src="gallery/arduinoRobot.jpg" alt=""></img>
-                <img src="gallery/CodeSS1.png" alt=""></img>
-                <img src="gallery/CodeSS2.png" alt=""></img>
-                <img src="gallery/codess3.jpg" alt=""></img>
-                <img src="gallery/CodePen_InstagramRemake.png" alt=""></img>
-                <img src="gallery/CustomCharacter.jpg" alt=""></img>
-                <img src="gallery/Mom_s MMO Avatar (More Shadow).jpg" alt=""></img>
-                <img src="gallery/Dungeon.png" alt=""></img>
-                <img src="gallery/Enviorment1.png" alt=""></img>
-                <img src="gallery/Humanoid.png" alt=""></img>
-                <img src="gallery/Sword1.png" alt=""></img>
-                <img src="gallery/Sword2.png" alt=""></img>
-                <img src="gallery/Sword3.png" alt=""></img>
-                <img src="gallery/Angel.png" alt=""></img>
-                <img src="gallery/BlenderBoy.JPG" alt=""></img>
-                <img src="gallery/BlenderGameDev.png" alt=""></img>
-                <img src="gallery/UnityGameDev1.png" alt=""></img>
+                <img src="Gallery/arduinoRobot.jpg" alt=""></img>
+                <img src="Gallery/CodeSS1.png" alt=""></img>
+                <img src="Gallery/CodeSS2.png" alt=""></img>
+                <img src="Gallery/codess3.jpg" alt=""></img>
+                <img src="Gallery/CodePen_InstagramRemake.png" alt=""></img>
+                <img src="Gallery/CustomCharacter.jpg" alt=""></img>
+                <img src="Gallery/Mom_s MMO Avatar (More Shadow).jpg" alt=""></img>
+                <img src="Gallery/Dungeon.png" alt=""></img>
+                <img src="Gallery/Enviorment1.png" alt=""></img>
+                <img src="Gallery/Humanoid.png" alt=""></img>
+                <img src="Gallery/Sword1.png" alt=""></img>
+                <img src="Gallery/Sword2.png" alt=""></img>
+                <img src="Gallery/Sword3.png" alt=""></img>
+                <img src="Gallery/Angel.png" alt=""></img>
+                <img src="Gallery/BlenderBoy.JPG" alt=""></img>
+                <img src="Gallery/BlenderGameDev.png" alt=""></img>
+                <img src="Gallery/UnityGameDev1.png" alt=""></img>
             </div
             `;
             break;
