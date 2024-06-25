@@ -21,6 +21,10 @@ function OpenApp(app){
             `;
             break;
         case "Gallery":
+            htmlCode += `
+            <div id="gallery"></div
+            `;
+            loadImages();
             break;
         case "Awards":
             htmlCode += `
@@ -133,3 +137,18 @@ function Call(){
     window.open('tel:9045780594');
     alert("Sorry, this doenst work yet. Please use your own phone app to contact me.");
 }
+async function loadImages() {
+    try {
+      const response = await fetch('/images.json');
+      const images = await response.json();
+      const gallery = document.getElementById('gallery');
+
+      images.forEach(image => {
+        const imgElement = document.createElement('img');
+        imgElement.src = `gallery/${image}`;
+        gallery.appendChild(imgElement);
+      });
+    } catch (error) {
+      console.error('Error loading images:', error);
+    }
+  }
