@@ -22,9 +22,26 @@ function OpenApp(app){
             break;
         case "Gallery":
             htmlCode += `
-            <div id="gallery"></div
+            <div id="gallery">
+                <img src="gallery/arduinoRobot.jpg" alt="">
+                <img src="gallery/CodeSS1.png" alt="">
+                <img src="gallery/CodeSS2.png" alt="">
+                <img src="gallery/codess3.jpg" alt="">
+                <img src="gallery/CodePen_InstagramRemake.png" alt="">
+                <img src="gallery/CustomCharacter.jpg" alt="">
+                <img src="gallery/Mom_s MMO Avatar (More Shadow).jpg" alt="">
+                <img src="gallery/Dungeon.png" alt="">
+                <img src="gallery/Enviorment1.png" alt="">
+                <img src="gallery/Humanoid.png" alt="">
+                <img src="gallery/Sword1.png" alt="">
+                <img src="gallery/Sword2.png" alt="">
+                <img src="gallery/Sword3.png" alt="">
+                <img src="gallery/Angel.png" alt="">
+                <img src="gallery/BlenderBoy.JPG" alt="">
+                <img src="gallery/BlenderGameDev.png" alt="">
+                <img src="gallery/UnityGameDev1.png" alt="">
+            </div
             `;
-            loadImages();
             break;
         case "Awards":
             htmlCode += `
