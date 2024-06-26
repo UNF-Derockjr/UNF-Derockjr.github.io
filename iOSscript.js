@@ -156,16 +156,16 @@ function Call(){
 }
 async function loadImages() {
     try {
-      const response = await fetch('/images.json');
-      const images = await response.json();
-      const gallery = document.getElementById('gallery');
+        const response = await fetch('/iOSImages.json');
+        const images = await response.json();
+        const gallery = document.getElementById('gallery');
 
-      images.forEach(image => {
-        const imgElement = document.createElement('img');
-        imgElement.src = `gallery/${image}`;
-        gallery.appendChild(imgElement);
-      });
+        images.forEach(image => {
+            const imgElement = document.createElement('img');
+            imgElement.src = `gallery/${image}`;
+            gallery.appendChild(imgElement);
+        });
     } catch (error) {
-      console.error('Error loading images:', error);
+        console.error('Error loading images:', error);
     }
   }
